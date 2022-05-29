@@ -31,12 +31,12 @@ public class StationCtrl extends Controller {
         String weatherIcon = null;
         if (latestReading != null)
         {
-            double fahrenheit = StationAnalytics.getCelsiusToFahrenheit(latestReading);
-            double windChill = StationAnalytics.getWindChillCalc(latestReading);
-            int beaufort = StationAnalytics.getBeaufortSelector(latestReading);
-            String windDirection = StationAnalytics.getWindDirection(latestReading);
-            String weatherCondition = StationAnalytics.getWeatherCondition(latestReading);
-            String weatherIcon = StationAnalytics.getWeatherIcon(latestReading);
+            fahrenheit = StationAnalytics.getCelsiusToFahrenheit(latestReading);
+            windChill = StationAnalytics.getWindChillCalc(latestReading);
+            beaufort = StationAnalytics.getBeaufortSelector(latestReading);
+            windDirection = StationAnalytics.getWindDirection(latestReading);
+            weatherCondition = StationAnalytics.getWeatherCondition(latestReading);
+            weatherIcon = StationAnalytics.getWeatherIcon(latestReading);
         }
 
         
