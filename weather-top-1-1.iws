@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9b0c215-2a49-4933-b4c7-47b5def40740" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/weatherballoon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/weathericons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/windspeed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/start.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/tags/addreading.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/addreading.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addreading.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_addreading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/tags/welcomemenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_start.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_start.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_welcomemenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/bytecode/DEV/_app_views_tags_welcomemenu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-top-1-1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/weather-top-1-1.iws" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +74,10 @@
       <updated>1652943741773</updated>
       <workItem from="1652943743293" duration="5136000" />
       <workItem from="1653026530835" duration="35782000" />
-      <workItem from="1653295725671" duration="6638000" />
+      <workItem from="1653295725671" duration="7776000" />
+      <workItem from="1653470929367" duration="793000" />
+      <workItem from="1653545477884" duration="682000" />
+      <workItem from="1653824306720" duration="3599000" />
     </task>
     <servers />
   </component>
