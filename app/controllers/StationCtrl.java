@@ -23,13 +23,16 @@ public class StationCtrl extends Controller {
         {
             latestReading = station.readings.get(station.readings.size()-1);
         }
-        
-        double fahrenheit = StationAnalytics.getCelsiusToFahrenheit(latestReading);
-        double windChill = StationAnalytics.getWindChillCalc(latestReading);
-        int beaufort = StationAnalytics.getBeaufortSelector(latestReading);
-        String windDirection = StationAnalytics.getWindDirection(latestReading);
-        String weatherCondition = StationAnalytics.getWeatherCondition(latestReading);
-        String weatherIcon = StationAnalytics.getWeatherIcon(latestReading);
+        if (latestReading != null)
+        {
+            double fahrenheit = StationAnalytics.getCelsiusToFahrenheit(latestReading);
+            double windChill = StationAnalytics.getWindChillCalc(latestReading);
+            int beaufort = StationAnalytics.getBeaufortSelector(latestReading);
+            String windDirection = StationAnalytics.getWindDirection(latestReading);
+            String weatherCondition = StationAnalytics.getWeatherCondition(latestReading);
+            String weatherIcon = StationAnalytics.getWeatherIcon(latestReading);
+        }
+
         
         render("station.html", station, latestReading, fahrenheit, windChill, beaufort, windDirection, weatherCondition, weatherIcon);
        
