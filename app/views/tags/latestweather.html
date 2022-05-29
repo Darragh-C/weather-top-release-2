@@ -1,73 +1,76 @@
-<div class="ui centered equal width grid">
-    <div class="row">
-        <div class="column">
-            <div class="ui segment">
-                <i class="huge red right floated map marker icon"></i>
-                <h3>${_station.name}</h3>
+#{if _latestReading}
+    <div class="ui centered equal width grid">
+        <div class="row">
+            <div class="column">
+                <div class="ui segment">
+                    <i class="huge red right floated map marker icon"></i>
+                    <h3>${_station.name}</h3>
 
-                <br>
-                <br>
-                <br>
-                Lat: ${_station.latitude}
-                <br>
-                Lng: ${_station.longitude}
+                    <br>
+                    <br>
+                    <br>
+                    Lat: ${_station.latitude}
+                    <br>
+                    Lng: ${_station.longitude}
+                </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="ui segment">
-                <i class="huge ${_weatherIcon}"></i>
-                <h3>Weather</h3>
-                <br>
-                <br>
-                ${_weatherCondition}
+            <div class="column">
+                <div class="ui segment">
+                    <i class="huge ${_weatherIcon}"></i>
+                    <h3>Weather</h3>
+                    <br>
+                    <br>
+                    ${_weatherCondition}
 
-                <br>
-                <br>
-                <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <i class="huge temperature low icon"></i>
+                    <h3>Temp</h3>
+                    <br>
+                    <br>
+                    ${_latestReading.temperature} C or ${_fahrenheit} F
+                    <br>
+                    Max: ${_latestReading.maxTemperature} C
+                    <br>
+                    Min: ${_latestReading.minTemperature} C
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <i class="huge wind icon"></i>
+                    <h3>Wind</h3>
+                    ${_beaufort} bft
+                    <br>
+                    Max: ${_latestReading.maxWindSpeed}
+                    <br>
+                    Min: ${_latestReading.minWindSpeed}
+                    <br>
+                    ${_windDirection}
+                    <br>
+                    Feels like: ${_windChill.round(2)}
+                </div>
+            </div>
+            <div class="column">
+                <div class="ui segment">
+                    <i class="huge tachometer alternate icon"></i>
+                    <h3>Pressure</h3>
+                    <br>
+                    <br>
+                    ${_latestReading.pressure} hPa
+                    <br>
+                    Max: ${_latestReading.maxPressure} hPa
+                    <br>
+                    Min: ${_latestReading.minPressure} hPa
+                </div>
             </div>
         </div>
-        <div class="column">
-            <div class="ui segment">
-                <i class="huge temperature low icon"></i>
-                <h3>Temp</h3>
-                <br>
-                <br>
-                ${_latestReading.temperature} C or ${_fahrenheit} F
-                <br>
-                Max: ${_latestReading.maxTemperature} C
-                <br>
-                Min: ${_latestReading.minTemperature} C
-            </div>
-        </div>
-        <div class="column">
-            <div class="ui segment">
-                <i class="huge wind icon"></i>
-                <h3>Wind</h3>
-                ${_beaufort} bft
-                <br>
-                Max: ${_latestReading.maxWindSpeed}
-                <br>
-                Min: ${_latestReading.minWindSpeed}
-                <br>
-                ${_windDirection}
-                <br>
-                Feels like: ${_windChill.round(2)}
-            </div>
-        </div>
-        <div class="column">
-            <div class="ui segment">
-                <i class="huge tachometer alternate icon"></i>
-                <h3>Pressure</h3>
-                <br>
-                <br>
-                ${_latestReading.pressure} hPa
-                <br>
-                Max: ${_latestReading.maxPressure} hPa
-                <br>
-                Min: ${_latestReading.minPressure} hPa
-            </div>
-        </div>
-
     </div>
-</div>
-
+#{/if}
+#{else}
+<p> No Readings! </p>
+#{/else}

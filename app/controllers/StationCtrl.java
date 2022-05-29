@@ -23,6 +23,12 @@ public class StationCtrl extends Controller {
         {
             latestReading = station.readings.get(station.readings.size()-1);
         }
+        double fahrenheit = 0.0;
+        double windChill = 0.0;
+        int beaufort = 0;
+        String windDirection = null;
+        String weatherCondition = null;
+        String weatherIcon = null;
         if (latestReading != null)
         {
             double fahrenheit = StationAnalytics.getCelsiusToFahrenheit(latestReading);
